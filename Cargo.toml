@@ -1,0 +1,10 @@
+[package]
+name = "hsr-fps-patch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winreg = "0.55"
+serde = "1.0"
+serde_json = "1.0"
+anyhow = "1.0"
