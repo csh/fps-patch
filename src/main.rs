@@ -30,12 +30,10 @@ fn main() -> anyhow::Result<()> {
                         if inner.as_u64() == Some(120) {
                             println!("120 FPS patch already applied");
                         } else {
-                            *inner = 120.into();
+                            *value = 120.into();
                             println!("Applying 120 FPS patch");
                         }
                     }
-
-                    *value = 120.into()
                 })
                 .or_insert(120.into());
 
